@@ -70,6 +70,17 @@ employee-management-system-java21/
 ├── JAVA-VERSION.txt
 └── README.md
 
+```text
+employee-management-system-java21/
+│
+├── backend/
+│
+├── frontend/
+│
+├── .gitignore
+├── JAVA-VERSION.txt
+└── README.md
+```
 
 ## 📸 Application Screenshot
 
