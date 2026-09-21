@@ -1,84 +1,71 @@
 # Employee Management System
 
-A one-day Java Full Stack project built with React.js, Spring Boot and MySQL.
+A full-stack Employee Management System built using Java 21, Spring Boot, MySQL, and React.js.
 
-## Tech Stack
+## 🚀 Features
 
+- Add new employees
+- View all employees
+- Update employee details
+- Delete employees
+- Search employees by name, email, or department
+- Dashboard with employee statistics
+- Department count
+- Total salary calculation
+- RESTful APIs
+- MySQL database integration
+- Responsive React user interface
+
+## 🛠️ Technologies Used
+
+### Backend
 - Java 21
 - Spring Boot
 - Spring Data JPA
-- MySQL
-- React.js
-- Axios
-- HTML5 / CSS3
+- Hibernate
 - REST API
 - Maven
 
-## Features
+### Frontend
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Vite
 
-- Add employee
-- View employees
-- Edit employee
-- Delete employee
-- Search employee
-- Department and salary dashboard
-- Responsive UI
-- MySQL persistence
+### Database
+- MySQL
 
-## Database
+### Tools
+- Visual Studio Code
+- MySQL Workbench
+- Git
+- GitHub
+- Thunder Client / REST API testing
 
-Create the database:
+## 📂 Project Structure
 
-```sql
-CREATE DATABASE employee_db;
-```
-
-Then edit:
-
-`backend/src/main/resources/application.properties`
-
-Replace:
-
-```properties
-spring.datasource.password=YOUR_MYSQL_PASSWORD
-```
-
-with your MySQL password.
-
-## Run Backend
-
-```bash
-cd backend
-mvn spring-boot:run
-```
-
-Backend runs on:
-
-`http://localhost:8080`
-
-## Run Frontend
-
-Open another terminal:
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-Frontend runs on:
-
-`http://localhost:5173`
-
-## API Endpoints
-
-- GET `/api/employees`
-- GET `/api/employees/{id}`
-- GET `/api/employees/search?name=Soheb`
-- POST `/api/employees`
-- PUT `/api/employees/{id}`
-- DELETE `/api/employees/{id}`
-
-## Project Description
-
-Employee Management System is a full-stack web application that provides CRUD operations for employee records. The React frontend communicates with a Spring Boot REST API, while Spring Data JPA persists employee data in MySQL.
+```text
+employee-management-system-java21/
+│
+├── backend/
+│   ├── src/
+│   │   └── main/
+│   │       ├── java/
+│   │       │   └── com/example/employee
+│   │       └── resources/
+│   │           └── application.properties
+│   └── pom.xml
+│
+├── frontend/
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── api.js
+│   │   ├── main.jsx
+│   │   └── styles.css
+│   ├── package.json
+│   └── vite.config.js
+│
+├── .gitignore
+├── JAVA-VERSION.txt
+└── README.md
