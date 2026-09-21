@@ -107,3 +107,42 @@ employee-management-system/
 | phone | VARCHAR | Employee phone number |
 | department | VARCHAR | Employee department |
 | salary | DOUBLE | Employee salary |
+
+## ▶️ How to Run the Project
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/SohebAkthar/employee-management-system.git
+cd employee-management-system
+
+### 2. Start the Backend
+
+Open a terminal:
+
+```bash
+cd backend
+mvn spring-boot:run
+
+### 3. Start the Frontend
+
+Open another terminal:
+
+```bash
+cd frontend
+npm install
+npm run dev
+
+### 4. Database Setup
+
+Create a MySQL database named:
+
+```text
+employee_db
+
+### 5. Open the Application
+
+Open your browser and visit:
+
+```text
+http://localhost:5173
