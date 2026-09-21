@@ -97,3 +97,61 @@ employee-management-system-java21/
 | POST | `/api/employees` | Add a new employee |
 | PUT | `/api/employees/{id}` | Update employee |
 | DELETE | `/api/employees/{id}` | Delete employee |
+
+## ▶️ How to Run the Project
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/SohebAkthar/employee-management-system.git
+cd employee-management-system
+```
+
+### 2. Start the Backend
+
+Open a terminal:
+
+```bash
+cd backend
+mvn spring-boot:run
+```
+
+Backend will run on:
+
+```text
+http://localhost:8080
+```
+
+### 3. Start the Frontend
+
+Open another terminal:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend will run on:
+
+```text
+http://localhost:5173
+```
+
+### 4. Open the Application
+
+Open your browser and visit:
+
+```text
+http://localhost:5173
+```
+
+### 5. Database Configuration
+
+Make sure MySQL is running and the `employee_db` database exists.
+
+Update the MySQL username and password in:
+
+```text
+backend/src/main/resources/application.properties
+```
