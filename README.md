@@ -83,3 +83,14 @@ employee-management-system/
 ## 📸 Application Screenshot
 
 ![Employee Management System Dashboard](screenshots/employee-dashboard.png)
+
+## 🔗 API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/employees` | Get all employees |
+| GET | `/api/employees/{id}` | Get employee by ID |
+| GET | `/api/employees/search?name=` | Search employees by name |
+| POST | `/api/employees` | Add a new employee |
+| PUT | `/api/employees/{id}` | Update employee |
+| DELETE | `/api/employees/{id}` | Delete employee |
