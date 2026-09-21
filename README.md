@@ -146,3 +146,14 @@ Open your browser and visit:
 
 ```text
 http://localhost:5173
+
+## ⭐ Project Highlights
+
+- Full-stack Java web application
+- RESTful backend using Spring Boot
+- React.js frontend
+- MySQL database integration
+- CRUD operations for employee management
+- Search functionality
+- Responsive dashboard
+- Clean and simple user interface
