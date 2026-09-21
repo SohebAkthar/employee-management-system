@@ -173,3 +173,15 @@ Database name:
 
 ```text
 employee_db
+
+## ✨ Project Highlights
+
+- Full-stack web application with separate frontend and backend
+- RESTful API architecture using Spring Boot
+- Persistent data storage using MySQL
+- Employee CRUD operations
+- Real-time dashboard statistics
+- Search employees by name, email, or department
+- Responsive and user-friendly React interface
+- Clean project structure following layered backend architecture
+- Version controlled using Git and GitHub
