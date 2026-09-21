@@ -1,24 +1,31 @@
-# Employee Management System
+# 👨‍💼 Employee Management System
 
-A full-stack Employee Management System built using Java 21, Spring Boot, MySQL, and React.js.
+A full-stack Employee Management System built using **Java 21, Spring Boot, MySQL, and React.js**.
+
+The application allows users to manage employee records through a modern and responsive web interface connected to a RESTful Spring Boot backend.
+
+---
 
 ## 🚀 Features
 
-- Add new employees
-- View all employees
-- Update employee details
-- Delete employees
-- Search employees by name, email, or department
-- Dashboard with employee statistics
-- Department count
-- Total salary calculation
-- RESTful APIs
-- MySQL database integration
-- Responsive React user interface
+- ➕ Add new employees
+- 👀 View all employees
+- ✏️ Update employee details
+- 🗑️ Delete employees
+- 🔍 Search employees by name, email, or department
+- 📊 Employee statistics dashboard
+- 🏢 Department count
+- 💰 Total salary calculation
+- 🔗 RESTful API integration
+- 🗄️ MySQL database integration
+- 📱 Responsive user interface
+
+---
 
 ## 🛠️ Technologies Used
 
 ### Backend
+
 - Java 21
 - Spring Boot
 - Spring Data JPA
@@ -27,6 +34,7 @@ A full-stack Employee Management System built using Java 21, Spring Boot, MySQL,
 - Maven
 
 ### Frontend
+
 - React.js
 - JavaScript
 - HTML5
@@ -34,14 +42,18 @@ A full-stack Employee Management System built using Java 21, Spring Boot, MySQL,
 - Vite
 
 ### Database
+
 - MySQL
+- MySQL Workbench
 
 ### Tools
+
 - Visual Studio Code
-- MySQL Workbench
 - Git
 - GitHub
-- Thunder Client / REST API testing
+- Thunder Client
+
+---
 
 ## 📂 Project Structure
 
@@ -53,8 +65,14 @@ employee-management-system-java21/
 │   │   └── main/
 │   │       ├── java/
 │   │       │   └── com/example/employee
+│   │       │       ├── controller/
+│   │       │       ├── entity/
+│   │       │       ├── repository/
+│   │       │       └── service/
+│   │       │
 │   │       └── resources/
 │   │           └── application.properties
+│   │
 │   └── pom.xml
 │
 ├── frontend/
@@ -63,32 +81,28 @@ employee-management-system-java21/
 │   │   ├── api.js
 │   │   ├── main.jsx
 │   │   └── styles.css
+│   │
 │   ├── package.json
 │   └── vite.config.js
 │
-├── .gitignore
-├── JAVA-VERSION.txt
-└── README.md
-
-```text
-employee-management-system-java21/
-│
-├── backend/
-│
-├── frontend/
+├── screenshots/
+│   └── employee-dashboard.png
 │
 ├── .gitignore
 ├── JAVA-VERSION.txt
 └── README.md
-```
 
-## 📸 Application Screenshot
+---
+
+## 🖥️ Application Screenshot
 
 ### Employee Dashboard
 
 ![Employee Dashboard](screenshots/employee-dashboard.png)
 
-## 🔗 API Endpoints
+---
+
+## 🔗 REST API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -98,90 +112,11 @@ employee-management-system-java21/
 | PUT | `/api/employees/{id}` | Update employee |
 | DELETE | `/api/employees/{id}` | Delete employee |
 
-## ▶️ How to Run the Project
+---
+
+## ⚙️ How to Run the Project
 
 ### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/SohebAkthar/employee-management-system.git
-cd employee-management-system
-```
-
-### 2. Start the Backend
-
-Open a terminal:
-
-```bash
-cd backend
-mvn spring-boot:run
-```
-
-Backend will run on:
-
-```text
-http://localhost:8080
-```
-
-### 3. Start the Frontend
-
-Open another terminal:
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-Frontend will run on:
-
-```text
-http://localhost:5173
-```
-
-### 4. Open the Application
-
-Open your browser and visit:
-
-```text
-http://localhost:5173
-```
-
-### 5. Database Configuration
-
-Make sure MySQL is running and the `employee_db` database exists.
-
-Update the MySQL username and password in:
-
-```text
-backend/src/main/resources/application.properties
-```
-
-## 🗄️ Database
-
-The application uses MySQL with the following employee table:
-
-| Column | Type | Description |
-|--------|------|-------------|
-| id | BIGINT | Primary key |
-| name | VARCHAR | Employee name |
-| email | VARCHAR | Employee email |
-| phone | VARCHAR | Employee phone number |
-| department | VARCHAR | Employee department |
-| salary | DOUBLE | Employee salary |
-
-Database name:
-
-```text
-employee_db
-
-## ✨ Project Highlights
-
-- Full-stack web application with separate frontend and backend
-- RESTful API architecture using Spring Boot
-- Persistent data storage using MySQL
-- Employee CRUD operations
-- Real-time dashboard statistics
-- Search employees by name, email, or department
-- Responsive and user-friendly React interface
-- Clean project structure following layered backend architecture
-- Version controlled using Git and GitHub
