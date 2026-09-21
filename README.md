@@ -157,3 +157,14 @@ http://localhost:5173
 - Search functionality
 - Responsive dashboard
 - Clean and simple user interface
+
+## 👨‍💻 Author
+
+**K MD Soheb Akthar**
+
+Information Science Engineering Student  
+Rao Bahadur Y. Mahabaleshwarappa Engineering College (RYMEC)
+
+- 💼 LinkedIn: [K MD Soheb Akthar](https://www.linkedin.com/in/k-md-soheb-akthar/)
+- 📧 Email: [soheb.ise.rymec@gmail.com](mailto:soheb.ise.rymec@gmail.com)
+- 💻 GitHub: [SohebAkthar](https://github.com/SohebAkthar)
