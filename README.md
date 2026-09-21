@@ -168,3 +168,13 @@ Rao Bahadur Y. Mahabaleshwarappa Engineering College (RYMEC)
 - 💼 LinkedIn: [K MD Soheb Akthar](https://www.linkedin.com/in/k-md-soheb-akthar/)
 - 📧 Email: [soheb.ise.rymec@gmail.com](mailto:soheb.ise.rymec@gmail.com)
 - 💻 GitHub: [SohebAkthar](https://github.com/SohebAkthar)
+
+## 🚀 Future Enhancements
+
+- 🔐 User authentication and authorization
+- 👥 Role-based access control
+- 📄 Employee profile management
+- 📊 Advanced analytics and reports
+- 🔎 Advanced filtering and sorting
+- ☁️ Cloud deployment
+- 📱 Improved mobile responsiveness
