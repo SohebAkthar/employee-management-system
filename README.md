@@ -79,3 +79,7 @@ employee-management-system/
 ├── .gitignore
 ├── JAVA-VERSION.txt
 └── README.md
+
+## 📸 Application Screenshot
+
+![Employee Management System Dashboard](screenshots/employee-dashboard.png)
