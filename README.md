@@ -69,3 +69,10 @@ employee-management-system-java21/
 ├── .gitignore
 ├── JAVA-VERSION.txt
 └── README.md
+
+
+## 📸 Application Screenshot
+
+### Employee Dashboard
+
+![Employee Dashboard](screenshots/employee-dashboard.png)
