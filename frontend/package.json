@@ -1,0 +1,20 @@
+{
+  "name": "employee-management-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.0.2",
+    "vite": "^7.1.5",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "axios": "^1.12.2",
+    "lucide-react": "^0.544.0"
+  },
+  "devDependencies": {}
+}
