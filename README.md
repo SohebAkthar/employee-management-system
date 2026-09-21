@@ -155,3 +155,21 @@ Update the MySQL username and password in:
 ```text
 backend/src/main/resources/application.properties
 ```
+
+## 🗄️ Database
+
+The application uses MySQL with the following employee table:
+
+| Column | Type | Description |
+|--------|------|-------------|
+| id | BIGINT | Primary key |
+| name | VARCHAR | Employee name |
+| email | VARCHAR | Employee email |
+| phone | VARCHAR | Employee phone number |
+| department | VARCHAR | Employee department |
+| salary | DOUBLE | Employee salary |
+
+Database name:
+
+```text
+employee_db
