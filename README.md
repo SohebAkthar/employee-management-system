@@ -87,3 +87,13 @@ employee-management-system-java21/
 ### Employee Dashboard
 
 ![Employee Dashboard](screenshots/employee-dashboard.png)
+
+## 🔗 API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/employees` | Get all employees |
+| GET | `/api/employees/{id}` | Get employee by ID |
+| POST | `/api/employees` | Add a new employee |
+| PUT | `/api/employees/{id}` | Update employee |
+| DELETE | `/api/employees/{id}` | Delete employee |
