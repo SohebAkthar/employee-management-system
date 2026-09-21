@@ -94,3 +94,16 @@ employee-management-system/
 | POST | `/api/employees` | Add a new employee |
 | PUT | `/api/employees/{id}` | Update employee |
 | DELETE | `/api/employees/{id}` | Delete employee |
+
+## 🗄️ Database Schema
+
+### Employee Table
+
+| Column | Type | Description |
+|--------|------|-------------|
+| id | BIGINT | Primary key |
+| name | VARCHAR | Employee name |
+| email | VARCHAR | Employee email |
+| phone | VARCHAR | Employee phone number |
+| department | VARCHAR | Employee department |
+| salary | DOUBLE | Employee salary |
