@@ -82,7 +82,9 @@ employee-management-system/
 
 ## 📸 Application Screenshot
 
-![Employee Management System Dashboard](screenshots/employee-dashboard.png)
+### Employee Dashboard
+
+![Employee Dashboard](screenshots/employee-dashboard.png)
 
 ## 🔗 API Endpoints
 
