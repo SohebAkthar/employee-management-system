@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Users, UserPlus, Search, Pencil, Trash2, X, Building2 } from 'lucide-react'
+import Login from './Login'
+import Register from './Register'
+import { Users, UserPlus, Search, Pencil, Trash2, X, Building2, LogOut } from 'lucide-react'
 import { createEmployee, deleteEmployee, getEmployees, updateEmployee } from './api'
 
 const emptyForm = {
@@ -11,6 +13,10 @@ const emptyForm = {
 }
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(
+    !!localStorage.getItem('token')
+  )
+
   const [employees, setEmployees] = useState([])
   const [form, setForm] = useState(emptyForm)
   const [editingId, setEditingId] = useState(null)
@@ -19,6 +25,35 @@ function App() {
   const [loading, setLoading] = useState(true)
   const [message, setMessage] = useState('')
 
+    const handleLogin = () => {
+    setIsLoggedIn(true)
+  }
+
+  const handleLogout = () => {
+  localStorage.removeItem('token')
+  localStorage.removeItem('userName')
+  localStorage.removeItem('userEmail')
+  localStorage.removeItem('userRole')
+
+  window.location.reload()
+}
+
+  if (!isLoggedIn) {
+  if (window.location.pathname === '/register') {
+    return (
+      <Register
+        onRegister={() => window.location.href = '/'}
+      />
+    )
+  }
+
+  return (
+    <Login
+      onLogin={handleLogin}
+      onRegister={() => window.location.href = '/register'}
+    />
+  )
+}
   const loadEmployees = async () => {
     try {
       const response = await getEmployees()
@@ -30,9 +65,11 @@ function App() {
     }
   }
 
-  useEffect(() => {
+ useEffect(() => {
+  if (isLoggedIn) {
     loadEmployees()
-  }, [])
+  }
+}, [isLoggedIn])
 
   const filteredEmployees = useMemo(() => {
     const value = search.trim().toLowerCase()
@@ -109,8 +146,17 @@ function App() {
             <p>Employee Management System</p>
           </div>
         </div>
+         <div className="user-info">
+          <span>Welcome,</span>
+          <strong>{localStorage.getItem('userName')}</strong>
+        </div>
+        
         <button className="primary-btn" onClick={openAdd}>
           <UserPlus size={18} /> Add Employee
+        </button>
+
+        <button className="secondary-btn" onClick={handleLogout}>
+          <LogOut size={18} /> Logout
         </button>
       </header>
 
